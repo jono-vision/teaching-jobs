@@ -60,6 +60,7 @@ stthomas = SchoolBoard('St_Thomas',
 searchtime = pyinputplus.inputInt('Duration of search in hours: ',max=10)
 refresh_interval_min = pyinputplus.inputInt('How often, in minutes, do you want to search for jobs?: ',min=3,max=28) #Refresh Interval
 
+# Automated login Process
 def accountlogin(board):
     browser = webdriver.Firefox(executable_path=locationwebdriver)
     browser.get(board.loginweb)
